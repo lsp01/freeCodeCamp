@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="fcc-form.css">
+    <title>freeCodeCamp Form Project</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1 id="title">freeCodeCamp Form Project</h1>
+        </header>
+        <p id="description">This page is for the freeCodeCamp form project.</p>
+        <form action="#" id="survey-form">
+            <fieldset>
+                <legend>Personal details</legend>
+                <div class="form-question">
+                    <label id="name-label" for="name">Name:</label>
+                    <input id="name" type="text" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-question">
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" type="email" placeholder="Enter your email address" required>
+                </div>
+
+                <div class="form-question">
+                    <label id="number-label" for="number">Age (optional):</label>
+                    <input id="number" type="number" min="13" max="105" placeholder="Enter your age">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Stuff</legend>
+                <div class="form-question">
+                    <label for="dropdown">What are you?</label>
+                    <select id="dropdown" name="definition" required>
+                        <option class="disabled" disabled selected value>Tell us what you are</option>
+                        <option value="human">Human</option>
+                        <option value="dog">Dog</option>
+                        <option value="fruit">Fruit</option>
+                        <option value="imaginary">Imaginary</option>
+                    </select>
+                </div>
+
+                <div class="form-question">
+                    <p>What do you like?</p>
+
+                    <div class="form-question--checkbox">
+                        <input id="guitars" type="checkbox" name="interests" value="guitars">
+                        <label for="guitars">Guitars</label>
+                    </div>
+
+                    <div class="form-question--checkbox">
+                        <input id="synths" type="checkbox" name="interests" value="synths">
+                        <label for="synths">Synths</label>
+                    </div>
+
+                    <div class="form-question--checkbox">
+                        <input id="cooking" type="checkbox" name="interests" value="cooking">
+                        <label for="cooking">Cooking</label>
+                    </div>
+
+                    <div class="form-question--checkbox">
+                        <input id="camping" type="checkbox" name="interests" value="camping">
+                        <label for="camping">Camping</label>
+                    </div>
+
+                </div>
+
+                <div class="form-question">
+                    <p>How many stars are you?</p>
+
+                    <div class="form-question--radio">
+                        <input id="one-star" type="radio" name="stars" value="one-star">
+                        <label for="one-star" value="one-star">One star</label>
+                    </div>
+
+                    <div class="form-question--radio">
+                        <input id="two-stars" type="radio" name="stars" value="two-stars">
+                        <label for="two-stars" value="two-stars">Two stars</label>
+                    </div>
+
+                    <div class="form-question--radio">
+                        <input id="three-stars" type="radio" name="stars" value="three-stars">
+                        <label for="three-stars" value="three-stars">Three stars</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Further feedback</legend>
+                <div class="form-question">
+                    <label for="textarea">Anything else?</label>
+                    <textarea id="textarea" type="textarea" placeholder="What is on your mind?"></textarea>
+                </div>
+            </fieldset>
+
+            <button id="submit" type='submit'>Submit</button>
+        </form>
+    </main>
+    <footer>&copy; lsp01 2021</footer>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

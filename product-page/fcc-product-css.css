@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&family=Rubik:wght@400;600;800&display=swap");
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+:root {
+    --main: firebrick;
+    --accent: darkslateblue;
+    --bg: seashell;
+    --bg2: firebrick;
+    --bg3: whitesmoke;
+    --subtle-shadow: 0 2.3px 1.7px rgba(0, 0, 0, 0.014),
+        0 6.3px 4.6px rgba(0, 0, 0, 0.02), 0 15.1px 11.2px rgba(0, 0, 0, 0.026),
+        0 50px 37px rgba(0, 0, 0, 0.04);
+}
+
+body {
+    background: var(--bg);
+    font-family: "Roboto Slab", Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Rubik, sans-serif;
+}
+
+h1 {
+    font-size: 1.8rem;
+    line-height: 2.6rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+
+main p {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+}
+
+nav a {
+    color: var(--bg);
+    text-decoration: none;
+    transition: 1s ease-in;
+}
+
+nav a:hover {
+    color: var(--accent);
+    transition: 0.4s ease-out;
+}
+
+.yeah-music,
+i {
+    text-shadow: 2px 4px var(--accent);
+}
+
+header {
+    align-items: center;
+    background: var(--bg2);
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    padding: 0.2rem 10rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    display: flex;
+    flex: 1 0 auto;
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+}
+
+.logo p span {
+    color: var(--bg);
+    font-weight: 800;
+}
+
+img#header-img {
+    max-height: 40px;
+    margin: auto 0.6rem auto 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 0.5rem 0;
+    list-style: none;
+    font-weight: 600;
+}
+
+main {
+    margin: 8rem 0 0 0;
+}
+
+main h1,
+main h2,
+main h3,
+main p,
+main iframe {
+    margin: 1rem 10rem;
+}
+
+h1,
+h2 {
+    color: var(--main);
+}
+
+h3 {
+    color: var(--accent);
+}
+
+section {
+    scroll-margin-top: 6rem;
+}
+
+.intro__flex-container {
+    display: flex;
+    margin: 3rem 10rem;
+    align-items: center;
+}
+
+.intro__text {
+    max-width: 50%;
+    margin-right: 1rem;
+}
+
+.intro__img {
+    flex: 1 1 auto;
+    margin-left: 1rem;
+}
+
+.intro__img img {
+    background: var(--main);
+    max-width: 100%;
+    filter: hue-rotate(326deg);
+    opacity: 0.8;
+}
+
+.intro__text h1,
+.intro__text p {
+    margin: 0.5rem 0;
+}
+
+div.about-services {
+    background: var(--main);
+    color: var(--bg);
+}
+
+div.about-services h2,
+div.about-services h3 {
+    color: var(--bg);
+}
+
+div.service-item {
+    display: flex;
+    align-items: center;
+    margin: 0 10rem;
+}
+
+div.service-details p,
+div.service-details h3 {
+    margin: 1rem 0 1rem 4rem;
+}
+
+div.about-services,
+div.main-products,
+section.newsletter {
+    padding: 2rem 0;
+}
+
+.main-products__flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 1rem 9rem;
+}
+
+div.card {
+    box-shadow: var(--subtle-shadow);
+    flex: 1 1 220px;
+    margin: 1rem;
+    background: var(--bg3);
+}
+
+.card__product-info h3,
+.card__product-info p {
+    margin: 1rem;
+}
+
+img.card__img {
+    max-width: 100%;
+    border-bottom: 10px solid var(--main);
+}
+
+div.products__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__video iframe {
+    max-width: 560px;
+    width: 100%;
+}
+
+section.newsletter {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+section.newsletter p {
+    max-width: 65ch;
+}
+
+form#form {
+    display: flex;
+    flex-flow: column;
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    font-weight: 600;
+    margin: 0.5rem 0;
+}
+
+input {
+    font-size: 1.2rem;
+}
+
+input#submit {
+    border: 1px solid black;
+    border-radius: 10px;
+    background: var(--accent);
+    color: var(--bg);
+    font-family: Rubik, Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 0.6rem;
+    transition: 0.4s;
+}
+
+input#submit:hover {
+    cursor: pointer;
+    background: var(--main);
+    transition: 0.4s;
+}
+
+footer {
+    text-align: center;
+    border-bottom: 5px solid var(--main);
+}
+
+@media only screen and (max-width: 860px) {
+    main {
+        margin: 8rem 0 0 0;
+    }
+
+    header {
+        padding: 0.2rem 4rem;
+    }
+
+    main h1,
+    main h2,
+    main h3,
+    main p,
+    main iframe {
+        margin: 1rem 4rem;
+    }
+
+    .intro__flex-container {
+        margin: 3rem 4rem;
+    }
+
+    div.service-item {
+        margin: 0 4rem;
+    }
+
+    .main-products__flex-container {
+        margin: 1rem 3rem;
+    }
+
+    .products__video iframe {
+        max-width: 470px;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 644px) {
+    header {
+        padding: 0.2rem 1rem;
+    }
+
+    div.logo {
+        margin: 0;
+    }
+
+    img#header-img {
+        margin: 0;
+    }
+
+    .logo p {
+        display: none;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+        line-height: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+        line-height: 1.6rem;
+    }
+
+    main p,
+    nav {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    main h1,
+    main h2,
+    main h3,
+    main p,
+    main iframe,
+    .intro h1,
+    .intro p,
+    div.service-details p,
+    div.service-details h3 {
+        margin: 1rem;
+    }
+
+    main {
+        margin: 5rem 0 0 0;
+    }
+
+    .intro__flex-container {
+        margin: 2rem 0;
+    }
+
+    .intro__text {
+        max-width: 100%;
+    }
+
+    .intro__img {
+        display: none;
+    }
+
+    div.about-services,
+    div.main-products,
+    section.newsletter {
+        padding: 1rem 0;
+    }
+
+    div.service-item {
+        margin: 0;
+    }
+
+    div.service-item i {
+        display: none;
+    }
+
+    .main-products__flex-container {
+        margin: 0;
+    }
+
+    .products__video {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .products__video iframe {
+        align-self: center;
+        max-width: 300px;
+        width: 100%;
+    }
+
+    form#form {
+        max-width: 90%;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+
+    header,
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        margin: 10rem 0 0 0;
+    }
+
+    section {
+        scroll-margin-top: 10rem;
+    }
+
+    div.card {
+        margin: 1rem 0;
+        background: var(--bg);
+        box-shadow: none;
+    }
+}

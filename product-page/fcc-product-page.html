@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="fcc-product-css.css">
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <title>Product Page | FCC Project</title>
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo">
+            <img id="header-img" src="https://img.icons8.com/material/48/000000/musical-notes--v1.png" alt="" />
+            <p><span class="yeah-music">Yeah Music!</span> Shop</p>
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#products">Products</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#newsletter">Newsletter</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="about" class="intro">
+            <div class="intro__flex-container">
+                <div class="intro__text">
+                    <h1>Yeah Music! Shop</h1>
+                    <p>At Yeah Music! we passionately believe in music, yeah!</p>
+                    <p>With over 5 minutes experience in the music industry, we can help you grow from a person who is
+                        maybe
+                        interested in music, to someone who finally who owns music gear and stuff!</p>
+                </div>
+
+                <div class="intro__img">
+                    <img src="https://source.unsplash.com/800x600/?music;shop" alt="">
+                </div>
+            </div>
+
+            <div class="about-services">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <i class="las la-guitar la-4x"></i>
+                    <div class="service-details">
+                        <h3>Guitar Maintenance</h3>
+                        <p>From setups to customisations and fixes.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="las la-music la-4x"></i>
+                    <div class="service-details">
+                        <h3>Musical Notes</h3>
+                        <p>From A to G# and everything in-between, we know all the notes and can write them down for
+                            you.</p>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <i class="las la-headphones la-4x"></i>
+                    <div class="service-details">
+                        <h3>Headphones</h3>
+                        <p>They're like speakers for your own face! We can help you find the perfect pair.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="products" class="products">
+            <div class="main-products">
+                <h2 class="main-products__heading">Our main products</h2>
+                <div class="main-products__flex-container">
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?guitar " alt="" class="card__img">
+                        <div class="card__product-info">
+                            <h3>Guitars</h3>
+                            <p>Is there anything cooler? It's hard to imagine.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?bass;guitar" alt="" class="card__img">
+                        <div class="card__product-info">
+                            <h3>Bass Guitars</h3>
+                            <p>Like guitars, but beefier.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="https://source.unsplash.com/800x600/?synthesizer,synthesiser,synth " alt=""
+                            class="card__img">
+                        <div class="card__product-info">
+                            <h3>Synthesisers</h3>
+                            <p>Electronic analogue and digital goodness!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products__video">
+                <p>Check out the Circuit Tracks in action.</p>
+                <iframe id="video" height="315" src="https://www.youtube.com/embed/s3oJv6KAM0k"
+                    title="YouTube video player" style="border:0;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <section id="newsletter" class="newsletter">
+            <h2>Stay Up To Date</h2>
+            <p>If you'd like to keep abreast of all the latest news here at Yeah Music! Shop, you can sign up to our
+                centenary newsletter.</p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" placeholder="Enter your email address" required>
+                <input id="submit" type="submit" value="Submit">
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; lsp01 2021</p>
+    </footer>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

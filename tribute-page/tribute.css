@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Urbanist:wght@500;800&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+:root {
+    --background: dimgrey;
+    --primary: tomato;
+    --secondary: lavender;
+}
+
+body {
+    background: var(--background);
+    color: var(--secondary);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 2rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: Urbanist;
+    color: var(--primary)
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 800;
+    line-height: 2.8rem;
+}
+
+footer {
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+a {
+    color: mediumspringgreen;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+#img-div figcaption {
+    font-size: 1rem;
+    text-align: center;
+}
+
+li,
+figure {
+    line-height: 1.8rem;
+}
+
+figure {
+    background: hsla(0, 0%, 20%, 0.4);
+    padding: 1rem;
+    margin: 0;
+}
+
+figcaption {
+    margin: .5rem 0;
+}
+
+#img-div {
+    margin: 0;
+}
+
+figure {
+    margin: 0 1rem;
+}
+
+blockquote {
+    margin: 0 1.5rem;
+}
+
+#img-div img {
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+    }
+
+    p,
+    figure,
+    li {
+        font-size: 1rem;
+        font-weight: 200;
+    }
+
+    figcaption {
+        margin: 0;
+    }
+
+    blockquote {
+        margin: 0 0.5rem;
+    }
+
+    footer {
+        font-size: 0.9rem;
+    }
+}
