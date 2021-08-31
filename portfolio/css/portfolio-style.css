@@ -16,6 +16,7 @@
     --bg-head: linear-gradient(45deg, midnightblue, darkmagenta);
     --block-dtop-padding: 4rem 18%;
     --block-tab-padding: 4rem 10%;
+    --block-mob-padding: 2rem 5%;
     --shadow-subtle: 0 1px 1px rgba(0, 0, 0, 0.02),
         0 2px 2px rgba(0, 0, 0, 0.1),
         0 4px 4px rgba(0, 0, 0, 0.2);
@@ -24,6 +25,7 @@
         0 6px 6px rgba(0, 0, 0, 0.4);
     --text-light: ghostwhite;
     --text-contact-links: var(--accent);
+    --text-shadow-dark: 2px 2px 1px black;
 }
 
 html {
@@ -52,7 +54,7 @@ h4 {
 }
 
 h1 {
-    text-shadow: 2px 2px 1px black;
+    text-shadow: var(--text-shadow-dark);
     font-size: 2.4rem;
     line-height: 3rem;
 }
@@ -148,11 +150,31 @@ h3 {
     text-transform: uppercase;
 }
 
+.navbar a::after {
+    content: "";
+    background: var(--accent);
+    display: block;
+    height: 4px;
+    margin: 0.25rem 0 0 0;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover {
+    color: var(--accent);
+    transition: 0.25s;
+}
+
+.navbar a:hover::after {
+    transform: scale(1, 1);
+}
+
 @media only screen and (max-width: 1000px) {
     .navbar {
         font-size: 1.2rem;
         font-weight: 400;
-        padding: 0 2rem;
+        padding: 0 10%;
     }
 }
 
@@ -164,6 +186,7 @@ h3 {
     .navbar {
         flex-flow: column nowrap;
         font-size: 1.2rem;
+        padding: 0 5%;
     }
 
     .navbar .logo {
@@ -190,6 +213,7 @@ header {
     flex-flow: column nowrap;
     justify-content: center;
     height: 100vh;
+    padding: 0 10%;
 }
 
 
@@ -218,7 +242,8 @@ section {
 
 @media only screen and (max-width: 1000px) {
     section {
-        scroll-margin-top: 5rem;
+        padding: var(--block-mob-padding);
+        scroll-margin-top: 6rem;
     }
 }
 
@@ -244,6 +269,10 @@ section#projects {
     background: var(--bg3);
 }
 
+section#projects h2 {
+    text-shadow: var(--text-shadow-dark);
+}
+
 .projects__card {
     background: var(--bg-cards);
     border-radius: 10px;
@@ -259,6 +288,21 @@ section#projects {
     cursor: pointer;
 }
 
+.projects__card img {
+    max-width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+a.projects__card {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.projects__card h3,
+.projects__card p {
+    padding: 0 1rem;
+}
+
 @media only screen and (min-width: 450px) {
 
     .projects__card:hover {
@@ -268,15 +312,7 @@ section#projects {
     }
 }
 
-.projects__card img {
-    max-width: 100%;
-    border-radius: 10px 10px 0 0;
-}
 
-.projects__card h3,
-.projects__card p {
-    padding: 0 1rem;
-}
 
 /* ====== CONTACT ====== */
 section#contact {
@@ -310,4 +346,25 @@ section#contact {
 .contacts__card a:hover {
     transform: scale(1.1);
     transition: 0.4s ease-out;
+}
+
+p.contact-disclaimer {
+    text-align: center;
+}
+
+@media only screen and (max-width: 450px) {
+    .flex-cards {
+        flex-flow: column nowrap;
+    }
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background: black;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem
 }
